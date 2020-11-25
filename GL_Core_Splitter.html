@@ -66,13 +66,13 @@
             var _opt
             if (z) {
                 _opt = tds.match(/(?<=\().+(?=\))/)[0]
-                    .replace(/Amplified /gi, "A")
-                    .replace(/ATK/g, "공")
-                    .replace(/DEF/g, "방")
-                    .replace(/HP/g, "체")
-                    .replace(/AGL/g, "민")
-                    .replace(/CRT/g, "치")
+                    .replace(/ATK/g, "N공")
+                    .replace(/DEF/g, "N방")
+                    .replace(/HP/g, "N체")
+                    .replace(/AGL/g, "N민")
+                    .replace(/CRT/g, "N치")
                     .replace(/\//g, "\t")
+                    .replace(/Amplified N/g, "A")
                 _oriTd.push(_opt)
                 console.log(_opt)
             }
